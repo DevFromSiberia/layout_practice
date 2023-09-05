@@ -456,6 +456,10 @@ button {
   .team__content {
     gap: 30px 20px;
   }
+
+  .team {
+    padding: 50px 0;
+  }
 }
 
 @media (max-width: 900px) {
@@ -782,6 +786,10 @@ button {
 
   .steps__list {
     gap: 25px 40px;
+  }
+
+  .team {
+    margin-bottom: 50px;
   }
 }
 
