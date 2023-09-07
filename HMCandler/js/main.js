@@ -12,3 +12,27 @@ const swiperOne = new Swiper(".feedback__slider", {
     el: ".swiper-pagination",
   }
 });
+
+const swiperTwo = new Swiper(".certificates__slider", {
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 20,
+
+  breakpoints: {
+    640: {
+      slidesPerView: 3,
+    },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+
+    360: {
+      slidesPerView: 1,
+    },
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
