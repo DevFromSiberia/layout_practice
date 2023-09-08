@@ -480,6 +480,58 @@ button {
   background-color: #ffbd59;
   display: inline-block;
   padding: 14px 25px 12px;
+  min-width: 135px;
+  text-align: center;
+}
+
+.contacts {
+  padding: 150px 0 50px;
+}
+
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form {
+  background-color: #fff;
+  width: 664px;
+  padding: 75px 42px 67px;
+}
+
+.form__title {
+  font-family: "Yeseva One", cursive;
+  margin-bottom: 60px;
+  font-size: 40px;
+}
+
+.form__input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+  padding: 7px 10px;
+  color: #000;
+}
+
+.form__input::placeholder {
+  color: #b3b3b3;
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.form__btn {
+  background-color: #ffbd59;
+  color: #272727;
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 36px;
+  padding: 17px 34px;
 }
 
 .footer {
@@ -585,6 +637,14 @@ button {
 
   .team {
     padding: 50px 0;
+  }
+
+  .promo__text {
+    padding-left: 0;
+  }
+
+  .contacts__img {
+    width: 335px;
   }
 }
 
@@ -784,6 +844,36 @@ button {
   .feedback__item-content {
     padding-bottom: 45px;
   }
+
+  .promo__text {
+    font-size: 15px;
+  }
+
+  .promo__link {
+    font-size: 12px;
+  }
+
+  .promo {
+    padding: 67px 0;
+  }
+
+  .contacts__img {
+    width: 187px;
+    object-fit: contain;
+  }
+
+  .form {
+    width: 440px;
+    padding: 30px 22px;
+  }
+
+  .form__title {
+    font-size: 15px;
+  }
+
+  .form__btn {
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -941,6 +1031,22 @@ button {
   .certificates__slider {
     width: 415px;
     margin: 0 auto;
+  }
+
+  .promo {
+    padding: 42px 0;
+  }
+
+  .contacts__img {
+    display: none;
+  }
+
+  .form__inpur::placeholder {
+    font-size: 10px;
+  }
+
+  .contacts {
+    padding-top: 50px;
   }
 }
 
@@ -1107,5 +1213,9 @@ button {
 
   .certificates__slider {
     width: 200px;
+  }
+
+  .promo__text {
+    margin-right: 50px;
   }
 }
