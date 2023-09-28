@@ -13,6 +13,12 @@ $(function () {
     dots: true,
     arrows: false,
     fade: true,
-    autoplay:true
+    autoplay: true,
+  });
+
+  const mixer = mixitup(".gallery__inner", {
+    load: {
+      filter: ".bedroom",
+    },
   });
 });
