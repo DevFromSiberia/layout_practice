@@ -15,6 +15,7 @@ $(function () {
     fade: true,
     autoplay: true,
   });
+  Fancybox.bind("[data-fancybox]", {});
 
   const mixer = mixitup(".gallery__inner", {
     load: {
