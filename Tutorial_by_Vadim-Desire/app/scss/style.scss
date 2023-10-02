@@ -124,6 +124,8 @@
 .breadcrumbs {
   background-color: rgba(#dfdfdf, 0.5);
   padding: 13px 14px;
+  position: relative;
+  z-index: 999;
   &__list {
     display: flex;
   }
@@ -654,6 +656,171 @@
   }
 }
 
+.map {
+  margin-top: -53px;
+  margin-bottom: 50px;
+}
+
+.info-email {
+  font-weight: 600;
+  font-size: 14px;
+  color: $title;
+  margin-bottom: 22px;
+  padding-left: 30px;
+  display: inline-block;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/mail-icon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 9px;
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.contact {
+  padding-bottom: 100px;
+  &__title {
+    color: $title;
+    @extend %title-font;
+    font-size: 36px;
+    line-height: 60px;
+    padding-bottom: 25px;
+    margin-bottom: 40px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 200px;
+      height: 2px;
+      background-color: #6d7278;
+    }
+  }
+
+  .contact__social {
+    padding-left: 284px;
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__social-item + .contact__social-item {
+    margin-left: 40px;
+  }
+
+  &__box {
+    padding-left: 284px;
+  }
+
+  &__text {
+    margin-bottom: 10px;
+    color: #a1a1a1;
+  }
+
+  &__phone {
+    color: $default;
+  }
+
+  &__city {
+    margin-bottom: 16px;
+  }
+
+  &__form {
+    padding-left: 284px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__form-input {
+    border: 1px solid #dfdfdf;
+    border-radius: 20px;
+    padding: 6px 17px;
+    margin-bottom: 13px;
+    width: 49%;
+
+    &::placeholder {
+      color: #a1a1a1;
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      line-height: 27px;
+      font-weight: 400;
+    }
+  }
+
+  &__form-area {
+    width: 100%;
+    border: 1px solid #dfdfdf;
+    border-radius: 24px;
+    padding: 14px 17px;
+    resize: none;
+    min-height: 125px;
+    margin-bottom: 20px;
+    &::placeholder {
+      color: #a1a1a1;
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      line-height: 27px;
+      font-weight: 400;
+    }
+  }
+
+  &__form-btn {
+    background-color: $title;
+    border: none;
+    color: #fffff0;
+    font-weight: 600;
+    border-radius: 21px;
+    padding: 6px 71px;
+    cursor: pointer;
+  }
+}
+
+.contact-slider {
+  padding-bottom: 102px;
+  &__link {
+    position: relative;
+    max-width: 170px;
+    margin-bottom: 20px;
+    &:hover {
+      .contact-slider__title {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+  }
+
+  &__title {
+    transition: all 0.5s;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(#fff, 0.6);
+    color: $title;
+    @extend %title-font;
+    line-height: 22px;
+    padding: 0 5px;
+    opacity: 0;
+    text-align: center;
+  }
+}
+
 .footer {
   &__content {
     background-color: #dfdfdf;
@@ -679,28 +846,6 @@
   &__info-text {
     max-width: 475px;
     margin-bottom: 16px;
-  }
-
-  &__info-email {
-    font-weight: 600;
-    font-size: 14px;
-    color: $title;
-    margin-bottom: 22px;
-    padding-left: 30px;
-    display: inline-block;
-    position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url(../images/mail-icon.svg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      left: 0;
-      top: 9px;
-      width: 16px;
-      height: 12px;
-    }
   }
 
   &__form {

@@ -15,6 +15,13 @@ $(function () {
     fade: true,
     autoplay: true,
   });
+
+  $(".contact-slider").slick({
+    slidesToShow: 10,
+    slidesToScroll: 10,
+    dots: true,
+    arrows: false,
+  });
   Fancybox.bind("[data-fancybox]", {});
 
   const mixer = mixitup(".gallery__inner", {
