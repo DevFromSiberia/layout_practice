@@ -22,6 +22,18 @@ $(function () {
     dots: true,
     arrows: false,
   });
+
+  $(".article-slider__box").slick({
+    prevArrow: `
+    <button type="button" class="article-slider__arrow article-slider__arrowleft">
+      <img src="images/arrow-slide-left.svg" alt="prev slide"/>
+    </button>`,
+    nextArrow: `
+    <button type="button" class="article-slider__arrow article-slider__arrowright">
+      <img src="images/arrow-slide-right.svg" alt="next slide"/>
+    </button>`,
+  });
+
   Fancybox.bind("[data-fancybox]", {});
 
   const mixer = mixitup(".gallery__inner", {
