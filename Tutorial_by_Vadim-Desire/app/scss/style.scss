@@ -18,6 +18,10 @@
     padding: 0;
     cursor: pointer;
   }
+
+  &__btn-menu {
+    display: none;
+  }
 }
 
 .logo {
@@ -1412,3 +1416,5 @@
     padding: 41px 0;
   }
 }
+
+@import "_media";
