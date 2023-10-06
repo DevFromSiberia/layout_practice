@@ -132,12 +132,17 @@
   z-index: 500;
   &__list {
     display: flex;
+    overflow-x: auto;
+  }
+
+  &__item {
+    position: relative;
+    padding-right: 10px;
   }
 
   &__item:after {
+    position: absolute;
     content: "/";
-    margin-left: -4px;
-    margin-right: 4px;
   }
 
   &__item:last-child::after {
@@ -1268,10 +1273,6 @@
   &__inner {
     display: flex;
     justify-content: space-between;
-  }
-
-  &__info {
-    max-width: 540px;
   }
 
   &__info-title {
